@@ -795,14 +795,12 @@ const app = new Vue({
       this.startPageVisible = false
     },
     categoryClickHandle(category) {
-      console.log(category)
       this.classes.answerButton.hide = false
       this.answerVisible = false
       if (this.idx < this.questions.length - 1) {
         let it = {}
         let arr = _.shuffle(this.questions)
         if (category !== 'random') {
-          console.log(this.questions)
           for (let i = 0; i < arr.length; i++) {
             if (arr[i].category === category && !arr[i].completed) {
               it = _.cloneDeep(arr[i])
