@@ -39,7 +39,7 @@
         <div class="question-container__answer-container">
           <transition name="fade">
             <a class="question-container__button button" :class="classes.answerButton"
-               @click="answerHandle(question.id)" v-if="!isAnswerVisible">Ответ</a>
+               @click="answerHandle(question.id)" v-if="!isAnswerVisible">Показать ответ</a>
           </transition>
           <transition name="fade">
             <div class="question-container__answer" v-if="isAnswerVisible">
